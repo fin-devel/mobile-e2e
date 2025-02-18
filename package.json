@@ -8,13 +8,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "fundix:e2e:dev": "maestro test -e APP_ID=com.amega.fundix.development",
-    "fundix:e2e:qa": "maestro test -e APP_ID=com.amega.fundix.qa",
-    "fundix:e2e:staging": "maestro test -e APP_ID=com.amega.fundix.staging",
-    "fundix:e2e:production": "maestro test -e APP_ID=com.amega.fundix.production",
-    "yoka:e2e:dev": "maestro test -e APP_ID=com.amega.yoka.development",
-    "yoka:e2e:qa": "maestro test -e APP_ID=com.amega.yoka.qa",
-    "yoka:e2e:staging": "maestro test -e APP_ID=com.amega.yoka.staging",
-    "yoka:e2e:production": "maestro test -e APP_ID=com.amega.yoka.production"
+    "fundix:dev": "maestro test -e APP_ID=com.amega.fundix.development",
+    "fundix:qa": "maestro test -e APP_ID=com.amega.fundix.qa",
+    "fundix:staging": "maestro test -e APP_ID=com.amega.fundix.staging",
+    "fundix:production": "maestro test -e APP_ID=com.amega.fundix.production",
+    "yoka:dev": "maestro test -e APP_ID=com.amega.yoka.development",
+    "yoka:qa": "maestro test -e APP_ID=com.amega.yoka.qa",
+    "yoka:staging": "maestro test -e APP_ID=com.amega.yoka.staging",
+    "yoka:production": "maestro test -e APP_ID=com.amega.yoka.production"
   }
 }

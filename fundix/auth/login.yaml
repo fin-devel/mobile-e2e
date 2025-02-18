@@ -1,5 +1,5 @@
 appId: ${APP_ID}
-name: 'Login using a test account'
+name: "Login using a test account"
 
 ---
 # Launch the application with cleared state
@@ -7,28 +7,22 @@ name: 'Login using a test account'
     clearState: true
 
 # Tap on the Sign In button
-- tapOn: 'Sign in'
-- assertVisible: 'Sign in'
+- tapOn: "Sign in"
+- assertVisible: "Sign in"
 
 # Enter the email address
-- runFlow:
-    file: '../templates/input.yaml'
-    env:
-      TEXT_INPUT_ID: 'sign_in_screen_email_input'
-      TEXT: 'b31_dev_arslan@iq1te49u.mailosaur.net'
+- tapOn: "Enter your email"
+- inputText: "b31_arslan@iq1te49u.mailosaur.net"
 
 # Enter the password
-- runFlow:
-    file: '../templates/input.yaml'
-    env:
-      TEXT_INPUT_ID: 'sign_in_screen_password_input'
-      TEXT: 'Tester01'
+- tapOn: "Enter Password"
+- inputText: "Tester01"
 
 # Tap on the Continue button
-- tapOn: 'Continue'
+- tapOn: "Continue"
 
 # Assert the visibility of the Home, Portfolio, Markets, and More tabs
-- assertVisible: 'Home'
-- assertVisible: 'Portfolio'
-- assertVisible: 'Markets'
-- assertVisible: 'More'
+- assertVisible: "Home"
+- assertVisible: "Portfolio"
+- assertVisible: "Markets"
+- assertVisible: "More"

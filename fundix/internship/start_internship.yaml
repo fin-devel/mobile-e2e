@@ -1,11 +1,13 @@
-name: 'Open a position while internship is active'
+appId: ${APP_ID}
+name: "Open a position while internship is active"
+
 ---
 # Run the login logic again
 - runFlow:
-    file: '../auth/login.yaml'
+    file: "../auth/login.yaml"
 
 # Tap on Start Internship on Home Screen
-- tapOn: 'Start Internship'
+- tapOn: "Start Internship"
 
 # Tap on Start Internship on Start Dialog
-- tapOn: 'Start Internship'
+- tapOn: "Start Internship"
