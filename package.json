@@ -1,0 +1,20 @@
+{
+  "name": "e2e-mobile",
+  "version": "1.0.0",
+  "description": "end to end testing with maestro for amega products",
+  "main": "index.js",
+  "repository": "https://github.com/fin-devel/mobile-e2e",
+  "author": "Arslan Mushtaq <arslanark@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "fundix:e2e:dev": "maestro test -e APP_ID=com.amega.fundix.development",
+    "fundix:e2e:qa": "maestro test -e APP_ID=com.amega.fundix.qa",
+    "fundix:e2e:staging": "maestro test -e APP_ID=com.amega.fundix.staging",
+    "fundix:e2e:production": "maestro test -e APP_ID=com.amega.fundix.production",
+    "yoka:e2e:dev": "maestro test -e APP_ID=com.amega.yoka.development",
+    "yoka:e2e:qa": "maestro test -e APP_ID=com.amega.yoka.qa",
+    "yoka:e2e:staging": "maestro test -e APP_ID=com.amega.yoka.staging",
+    "yoka:e2e:production": "maestro test -e APP_ID=com.amega.yoka.production"
+  }
+}
