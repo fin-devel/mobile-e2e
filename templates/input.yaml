@@ -1,0 +1,9 @@
+appId: ${APP_ID}
+name: "Template for inputting text"
+---
+# Ttap on text input
+- tapOn:
+    id: ${TEXT_INPUT_ID}
+
+# Enter text
+- inputText: ${TEXT}
