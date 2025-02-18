@@ -1,0 +1,28 @@
+appId: ${APP_ID}
+name: "Open a position while internship is active"
+
+---
+# Run the login logic again
+- runFlow:
+    file: "open_buy_position.yaml"
+
+# Tap on the Portfolio bottom tab
+- tapOn: "Portfolio"
+
+# Tap on the Positions top tab
+- tapOn: "Positions"
+
+# Tap on the first item
+- tapOn: "AUDCAD"
+
+# Tap on the first list item
+- tapOn: "Buy"
+
+# Tap on the 'Close' button
+- tapOn: "Close"
+
+# Tap on the 'Close' button
+- tapOn: "Confirm"
+
+# Tap on the 'Close' button
+- assertVisible: "Position closed successfully"
