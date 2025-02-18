@@ -11,3 +11,12 @@ name: "Open a position while internship is active"
 
 # Tap on Start Internship on Start Dialog
 - tapOn: "Start Internship"
+
+# Ensure the visibility of the Internship screen
+# PnL text should be $0.00
+# Equity text should be Equity: $100,000.00
+- extendedWaitUntil:
+    visible: \$0.00
+    timeout: 120_000
+
+- assertVisible: 'Equity: \$100,000.00'
