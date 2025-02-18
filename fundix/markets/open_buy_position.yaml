@@ -1,0 +1,23 @@
+name: 'Open a position while internship is active'
+---
+# Run the login logic again
+- runFlow:
+    file: '../auth/login.yaml'
+
+# Tap on the Markets bottom tab
+- tapOn: 'Markets'
+
+# Tap on the AUDCAD asset
+- tapOn: 'AUDCAD'
+
+# Tap on the Buy button
+- tapOn: 'Buy'
+
+# Tap the '7,500' button
+- tapOn: '7,500'
+
+# Tap on the 'Buy now' button
+- tapOn: 'Buy now'
+
+# Assert that the 'You have bought 7500.00 AUDCAD at' text is visible
+- assertVisible: 'You have bought 7500.00 AUDCAD at'
